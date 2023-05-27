@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.22)  27 MAY 2023 13:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.22)  27 MAY 2023 13:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -175,7 +175,7 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count278
 \l__pdf_internal_box=\box54
 )
-No file trigfunctionsanyregpolygon.aux.
+(./trigfunctionsanyregpolygon.aux)
 \openout1 = `trigfunctionsanyregpolygon.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -192,6 +192,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -283,12 +284,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {d:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/texlive/2023/
-texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-No file trigfunctionsanyregpolygon.toc.
+texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./trigfunctionsanyregpol
+ygon.toc)
 \tf@toc=\write3
 \openout3 = `trigfunctionsanyregpolygon.toc'.
 
-[1] [2] [3]
+ [1]
+[2] [3]
 Overfull \hbox (29.19272pt too wide) detected at line 126
 []
  []
@@ -305,10 +307,10 @@ Overfull \hbox (21.65312pt too wide) detected at line 145
 
 [5] [6] [7] [8] (./trigfunctionsanyregpolygon.aux) ) 
 Here is how much of TeX's memory you used:
- 4125 strings out of 476096
- 62747 string characters out of 5795114
+ 4131 strings out of 476096
+ 62957 string characters out of 5795114
  1898845 words of memory out of 5000000
- 24469 multiletter control sequences out of 15000+600000
+ 24471 multiletter control sequences out of 15000+600000
  526970 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,18n,76p,743b,237s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -326,7 +328,7 @@ ype1/public/cm-super/sfbx1200.pfb><d:/texlive/2023/texmf-dist/fonts/type1/publi
 c/cm-super/sfbx1440.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/cm-super
 /sfrm1095.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.
 pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on trigfunctionsanyregpolygon.pdf (9 pages, 204079 bytes).
+Output written on trigfunctionsanyregpolygon.pdf (9 pages, 207347 bytes).
 PDF statistics:
  110 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
