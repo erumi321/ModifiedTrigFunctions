@@ -1,14 +1,21 @@
-on: 
+name: Release with commit
+
+on:
   push:
     branches:
       - master
-
 jobs:
-  release-on-push:
+  release:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: rymndhng/release-on-push-action@master
+      - uses: ChanTsune/release-with-commit@v2.8.0
         with:
-          bump_version_scheme: minor
+          regexp: "Release ((\\d+([.]\\d+)*)-(alpha|beta|rc)\\d*)((\\s|\\S)*)"
+          regexp_options: "us"
+          release_name: "version $1"
+          tag_name: "v$1"
+          body: "$5"
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}' # This token is provided by Actions, you do not need to create your own token
