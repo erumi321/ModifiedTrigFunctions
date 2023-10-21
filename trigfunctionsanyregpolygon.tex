@@ -8,22 +8,28 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[makeroom]{cancel}
+
+\usepackage{comment} %For editing
+
 \allowdisplaybreaks
-\DeclareMathOperator{\custd}{\mathrm{d}_n}
-\DeclareMathOperator{\custdsq}{\mathrm{d}_n}
-\DeclareMathOperator{\custh}{\mathrm{h}_n}
-\DeclareMathOperator{\custi}{\mathrm{i}}
-\DeclareMathOperator{\period}{\frac{2\pi}{n}}
-\DeclareMathOperator{\hp}{\frac{\pi}{n}}
-\DeclareMathOperator{\iperiod}{\custi\frac{2\pi}{n}}
+\DeclareMathOperator{\custd}{\mathrm{d}_s}
+\DeclareMathOperator{\custdsq}{\mathrm{d}_s}
+\DeclareMathOperator{\custh}{\mathrm{h}_s}
+\DeclareMathOperator{\custi}{\mathrm{n}}
+\DeclareMathOperator{\period}{\frac{2\pi}{s}}
+\DeclareMathOperator{\hp}{\frac{\pi}{s}}
+\DeclareMathOperator{\iperiod}{\custi\frac{2\pi}{s}}
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}%
 
+
+
 \renewcommand*\contentsname{Table of Contents}
-\title{Trigonometric Coefficients for Regular N-Sided Polygons}
+\title{Trigonometric Coefficients for Regular S-Sided Polygons}
 \author{Eli Ruminer}
 \date{}
 
 \begin{document}
+
 \begin{titlepage}
 \clearpage\maketitle
 \thispagestyle{empty}
@@ -32,12 +38,13 @@
 \tableofcontents
 \newpage
 
+%REDO THIS PLEASE AHHHHH IT NEEDS MORE WORK
 \section{Introduction}
-This paper derives a function that generates a coefficient that transforms sine and cosine into calculating points for any n-sided regular polygon. This is done through using inverse trigonometric functions to create a periodic function that increases and decreases linearly over each period, allowing the creation of a coefficent which when multiplied by sine and cosine serves to transform them into an equivalent function for non-circle polygons.\\
+This paper derives a function that generates a coefficient that transforms sine and cosine into calculating points for any s-sided regular polygon. This is done through using inverse trigonometric functions to create a periodic function that increases and decreases linearly over each period, allowing the creation of a coefficent which when multiplied by sine and cosine serves to transform them into an equivalent function for non-circle polygons.\\
  After deriving the equation we then prove that it represents a point on the perimeter of a unit n-gon by simplifying the slope-intercept form of a constructing line of the unit n-gon and two points between the modified sine and cosine showing they are the same. \\
 Through this, we can derive a general formula for any shape using the sign function and the newly proven coefficient function. This general function requires the use of an "input" angle, which is calculated using x and y for each point, and due to this can be rotated by simply adding or subtracting a constant from the angle calculation inside the coefficient function's input.
 
-
+\begin{comment}
 \section{Theroems}
 %\textbf{Theorem 1.1} \(\arccos(\cos(x))\neq\cos(\arccos(x))\).\\
 %This can be shown when \(a=1\mathrm{ and }x=-\frac{\pi}{6}\) which solves to \(\frac{\pi}{6}\neq-\frac{\pi}{6}\).\\
@@ -57,122 +64,56 @@ Through this, we can derive a general formula for any shape using the sign funct
 &=-\cot(\frac{a+b}{2})
 \end{split}
 \end{equation*}
+\end{comment}
 
 \pagebreak
 \section{Trigonometric\ Equations}
-Let \(n=\{x:x\in\mathbb{Z}^+\ \mathrm{and}\ x\geq3\}\), and
+Let \(s=\{x:x\in\mathbb{Z}^+\ \mathrm{and}\ x\geq3\}\), and
 \begin{gather*}
-\custd(\theta)=\cos(\hp)\sec(\frac{\pi - \arccos(\cos(n\theta))}{n})\\
-\cos_n(\theta)=\custd(\theta)\cos(\theta)\\
-\sin_n(\theta)=\custd(\theta)\sin(\theta)
+\custd(\theta)=\cos(\hp)\sec(\frac{\pi - \arccos(\cos(s\theta))}{s})\\
+\cos_s(\theta)=\custd(\theta)\cos(\theta)\\
+\sin_s(\theta)=\custd(\theta)\sin(\theta)
 \end{gather*}
 This is derived through the original functions:
 \begin{gather*}
 \custh(\theta)=\sin(\frac{\pi}{2}-\hp+(\theta\mod\period))-\sin(\frac{\pi}{2}-\hp)\\
 \custd(\theta)=\frac{\custh(\theta)}{\sin(\frac{\pi}{2}-\hp+(\theta\mod\period))}\\
-\cos_n(\theta)=(1-\custd(\theta))\cos(\theta)\\
-\sin_n(\theta)=(1-\custd(\theta))\sin(\theta)
+\cos_s(\theta)=(1-\custd(\theta))\cos(\theta)\\
+\sin_s(\theta)=(1-\custd(\theta))\sin(\theta)
 \end{gather*}
-These functions follow the premise that any n-sided regular polygon (shape \(\rm s_n\)) centered at (0,0) has a circumcircle where each vertex touches the circumference of the circumcircle. \\
-Arc \(a\) can be constructed which is \(\rm \frac{1}{n^{th}}\) of the circumcircle, its diameter is the same length as any line which constructs \(\rm s_n\), and it's circumference equals to the circumference of the section of the circumcircle spanning from adjacent vertices on \(\rm s_n\). \\
-Thus, the height of \(a\) at a given point on a circle subtracted from the radius of the circle will result in the distance from the center of \(\rm s_n\) to the point on the perimeter of \(\rm s_n\) which intersects the ray of angle \(\theta\) drawn in standard position.\\
-\(\custh(\theta)\) serves to find the height of \(a\) at a position by splitting the circumcircle into \(\rm n^{ths}\) (resulting in a period of \(\period\)), finding the height of a point on \(a\) through sine and changing from the "left" vertex to the "right" vertex over the period of \(\period\) (the length of \(a\)). The use of mod makes the function periodic. It then subtracts by the height of a vertex so that \(\custh(\theta)=0\) when \(\theta=0\)\\
-\(\custd(\theta)\) divides the height, \(\custh(\theta)\), by the angle between the assumed intersection point on \(\rm s_n\) and the intersection point on the circumcircle to get the actual distance.\\
+These functions follow the premise that any s-sided regular polygon (\(\rm P_s\)) centered at (0,0) has a circumcircle where each vertex touches the circumference of the circumcircle. \\
+Arc \(a\) can be constructed which is \(\rm \frac{1}{s^{th}}\) of the circumcircle, its diameter is the same length as any line which constructs \(\rm P_s\), and it's circumference equals to the circumference of the section of the circumcircle spanning from adjacent vertices on \(\rm P_s\). \\
+Thus, the height of \(a\) at a given point on a circle subtracted from the radius of the circle will result in the distance from the center of \(\rm P_s\) to the point on the perimeter of \(\rm P_s\) which intersects the ray of angle \(\theta\) drawn in standard position.\\
+\(\custh(\theta)\) serves to find the height of \(a\) at a position by splitting the circumcircle into \(\rm s^{ths}\) (resulting in a period of \(\period\)), finding the height of a point on \(a\) through sine and changing from the "left" vertex to the "right" vertex over the period of \(\period\) (the length of \(a\)). The use of mod makes the function periodic. It then subtracts by the height of a vertex so that \(\custh(\theta)=0\) when \(\theta=0\)\\
+\(\custd(\theta)\) divides the height, \(\custh(\theta)\), by the angle between the assumed intersection point on \(\rm P_s\) and the intersection point on the circumcircle to get the actual distance.\\
 These functions then simplify to:
 \begin{gather*}
 \custd(\theta)=\cos(\hp)\sec(\hp-(\theta\mod\period))\\
-\cos_n(\theta)=\custd(\theta)cos(\theta)\\
-\sin_n(\theta)=\custd(\theta)sin(\theta)
+\cos_s(\theta)=\custd(\theta)\cos(\theta)\\
+\sin_s(\theta)=\custd(\theta)\sin(\theta)
 \end{gather*}
-Which is not algebraic due to modulo (mod), yet it can be noted that due to the nature of the original \(\custh(\theta)\), \(\theta\mod\period\) can be substituted for an equivalent function which has an equal period of \(\period\), increases linearly from 0 to \(\hp\) over \([0,\hp]\) and decreases linearly at the same rate over \([\hp,\period]\).\\
-These requirements can be met by \(\frac{\arccos(\cos(n\theta))}{n}\), which due to \textbf{Theorem 1.1} and \textbf{Theorem 1.2} is periodic over \(\period\) has a domain of \(n\theta\in\mathbb{R},\text{and thus } \theta\in\mathbb{R}\), and a range of \([0,\frac{\pi}{n}]\), thus the above equations can be changed to:
+Which is not algebraic due to modulo, yet it can be noted that due to the nature of the original \(\custh(\theta)\), \(\theta\mod\period\) can be substituted for an equivalent function which has an equal period of \(\period\), increases linearly from 0 to \(\hp\) over \([0,\hp]\) and decreases linearly at the same rate over \([\hp,\period]\).\\
+These requirements can be met by \(\frac{\arccos(\cos(n\theta))}{n}\), which is periodic over \(\period\), has a domain of \(n\theta\in\mathbb{R},\text{and thus } \theta\in\mathbb{R}\), and a range of \([0,\frac{\pi}{s}]\), thus the above equations can be changed to:
 \begin{gather*}
-\custd(\theta)=\cos(\hp)\sec(\frac{\pi-\arccos(\cos(n\theta))}{n})\\
-\cos_n(\theta)=\custd(\theta)cos(\theta)\\
-\sin_n(\theta)=\custd(\theta)sin(\theta)
+\custd(\theta)=\cos(\hp)\sec(\frac{\pi-\arccos(\cos(s\theta))}{s})\\
+\cos_s(\theta)=\custd(\theta)\cos(\theta)\\
+\sin_s(\theta)=\custd(\theta)\sin(\theta)
 \end{gather*}
 
 \subsection{Identities}
-\textbf{Identity 1.1} Let \(i=\mathbb{Z}\), due to \textbf{Theorem 1.3}:
+\textbf{Identity 1.1} Let \(\custi=\mathbb{Z}\):
 \begin{gather*}
-\cos_n(\theta+\iperiod) = \custd(\theta)\cos(\theta+\iperiod)\\
-\sin_n(\theta+\iperiod) = \custd(\theta)\sin(\theta+\iperiod)
+\cos_s(\theta+\iperiod) = \custd(\theta)\cos(\theta+\iperiod)\\
+\sin_s(\theta+\iperiod) = \custd(\theta)\sin(\theta+\iperiod)
 \end{gather*} \\
 \textbf{Identity 1.2} When \(0\leq\theta\leq\period\) then \(\custd(\theta)=\cos(\hp)\sec(\hp-\theta)\)\\
-When \(\theta\) only spans one period, \(\frac{\arccos(\cos(n\theta))}{n}\) is not required to make the function periodic.\\
+When \(\theta\) only spans one period, \(\frac{\arccos(\cos(s\theta))}{s}\) is not required to make the function periodic.\\
 \textbf{Identity 1.3} Let \(\custi=\mathbb{Z}\) then:
 \begin{gather*}
-\cos_n(\iperiod) = (1)\cos(\iperiod)=\cos(\iperiod)\\
-\sin_n(\iperiod) = (1)\sin(\iperiod)=\sin(\iperiod)
+\cos_s(\iperiod) = (1)\cos(\iperiod)=\cos(\iperiod)\\
+\sin_s(\iperiod) = (1)\sin(\iperiod)=\sin(\iperiod)
 \end{gather*}
-This is true because \(\arccos(\cos(n\theta))\) evaluates to 0 whenever \(\theta=\iperiod\), which means \(\sec(\frac{\pi-\arccos(\cos(n\theta))}{n})\) simplifies to \(\sec(\hp)\) so \(\custd(\iperiod)=\sec(\hp)\cos(\hp)=1\)
-
-
-\section{Proof}
-Let \(\custi,n=\mathbb{Z},n\geq3\). Shape \(\rm s_n\) is made of n vertices and n line segments with the \(\rm i^{th}\) vertex (\(\rm v_i\)) at the point \((\cos(\iperiod), \sin(\iperiod))\). The \(\rm i^{th}\) line segment, \(\rm L_i\), spans between \(\rm v_i\) and \(\rm v_{i+1}\) and is represented by the equation
-\begin{gather*}
-\mathrm{L_i}=\frac{\sin((\custi+1)\period)-\sin(\iperiod)}{\cos((\custi+1)\period)-\cos(\iperiod)}x+\sin(\iperiod)-\frac{\sin((\custi+1)\period)-\sin(\iperiod)}{\cos((\custi+1)\period)-\cos(\iperiod)}\cos(\iperiod)
-\end{gather*}
-which due to \textbf{Theorem 2.1} and \textbf{Theorem 2.2} simplifies to
-\begin{gather*}
-\mathrm{L_i}=-\cot((2\custi+1)\hp)x+\sin(\iperiod)+\cot((2\custi+1)\hp)\cos(\iperiod)
-\end{gather*}
-Let \(0\leq a<b\leq\period\), \(\alpha=a+\iperiod\), and \(\beta=b+\iperiod\): a "modified" line can be drawn with the equation \(\sin_n(\theta)\) and \(\cos_n(\theta)\) which would be written as
-\begin{gather*}
-y_m=\frac{\sin_n(\beta)-\sin_n(\alpha)}{\cos_n(\beta)-\cos_n(\alpha)}x+\sin_n(\alpha)-\frac{\sin_n(\beta)-\sin_n(\alpha)}{\cos_n(\beta)-\cos_n(\alpha)}\cos_n(\alpha)\\
-\end{gather*}
-the slope of \(y_m\) can be simplified through these steps:
-\begin{gather*}
-\frac{\custd(\beta)\sin(\beta)-\custd(\alpha)\sin(\alpha)}{\custd(\beta)\cos(\beta)-\custd(\alpha)\cos(\alpha)}\\
-\cancel{\frac{\cos(\hp)}{\cos(\hp)}}\frac{\sec(\hp-b)\sin(\beta)-\sec(\hp-a)\sin(\alpha)}{\sec(\hp-b)\cos(\beta)-\sec(\hp-a)\cos(\alpha)}*\frac{\cos(\hp-a)\cos(\hp-b)}{\cos(\hp-a)\cos(\hp-b)}\\
-\frac{\sin(\beta)\cos(\hp-a)-\sin(\alpha)\cos(\hp-b)}{\cos(\beta)\cos(\hp-a)-\cos(\alpha)\cos(\hp-b)}\\
-\frac{\sin(\beta)(\cos(\hp)\cos(a)+\sin(\hp)\sin(a))-\sin(\alpha)(\cos(\hp)\cos(b)+\sin(\hp)\sin(b))}{\cos(\beta)(\cos(\hp)\cos(a)+\sin(\hp)\sin(a))-\cos(\alpha)(\cos(\hp)\cos(b)+\sin(\hp)\sin(b))}*\frac{\sec(\hp)}{\sec(\hp)}\\
-\frac{\sin(\beta)(\cos(a)+\tan(\hp)\sin(a))-\sin(\alpha)(\cos(b)+\tan(\hp)\sin(b))}{\cos(\beta)(\cos(a)+\tan(\hp)\sin(a))-\cos(\alpha)(\cos(b)+\tan(\hp)\sin(b))} \quad\mathrm{(\textbf{3.1})}
-\end{gather*}
-Splitting the equation up the numerator simplifies like so:
-\begin{gather*}
-\sin(\beta)(\cos(a)+\tan(\hp)\sin(a))-\sin(\alpha)(\cos(b)+\tan(\hp)\sin(b))\\\\
-(\sin(b)\cos(\iperiod)+\cos(b)\sin(\iperiod))(\cos(a)+\tan(\hp)\sin(a))-\dotso\\\dotso(\sin(a)\cos(\iperiod)+\cos(a)\sin(\iperiod))(\cos(b)+\tan(\hp)\sin(b))\\\\
-\cos(a)\sin(b)\cos(\iperiod)+\cancel{\sin(a)\sin(b)\cos(\iperiod)\tan(\hp)}+\cancel{\cos(a)\cos(b)\sin(\iperiod)}+\dotso\\\dotso\sin(a)\cos(b)\sin(\iperiod)\tan(\hp)-\sin(a)\cos(b)\cos(\iperiod)-\cancel{\sin(a)\sin(b)\cos(\iperiod)\tan(\hp)}-\dotso\\\dotso\cancel{\cos(a)\cos(b)\sin(\iperiod)}-\cos(a)\sin(b)\sin(\iperiod)\tan(\hp)\\\\
-\cos(\iperiod)(\cos(a)\sin(b)-\sin(a)\cos(b))+\sin(\iperiod)\tan(\hp)(\sin(a)\cos(b)-\cos(a)\sin(b))\\\\
-\sin(\iperiod)\tan(\hp)(\sin(a)\cos(b)-\cos(a)\sin(b))-\cos(\iperiod)(\sin(a)\cos(b)-\cos(a)\sin(b))\\\\
-(\sin(\iperiod)\tan(\hp)-\cos(\iperiod))(\sin(a)\cos(b)-\cos(a)\sin(b))\\\\
-(\sin(\iperiod)\tan(\hp)-\cos(\iperiod))\sin(a-b)
-\end{gather*}
-and the denominator simplifies to
-\begin{gather*}
-\cos(\beta)(\cos(a)+\tan(\hp)\sin(a))-\cos(\alpha)(\cos(b)+\tan(\hp)\sin(b))\\\\
-(\cos(b)\cos(\iperiod)-\sin(b)\sin(\iperiod))(\cos(a)+\tan(\hp)\sin(a))-\dotso\\\dotso(\cos(a)\cos(\iperiod)-\sin(a)\sin(\iperiod))(\cos(b)+\tan(\hp)\sin(b))\\\\
-\cancel{\cos(a)\cos(b)\cos(\iperiod)}+\sin(a)\cos(b)\cos(\iperiod)\tan(\hp)-\cos(a)\sin(b)\sin(\iperiod)-\dotso\\\dotso\cancel{\sin(a)\sin(b)\sin(\iperiod)\tan(\hp)}-\cancel{\cos(a)\cos(b)\cos(\iperiod)}-\cos(a)\sin(b)\cos(\iperiod)\tan(\hp)+\dotso\\\dotso\sin(a)\cos(b)\sin(\iperiod)+\cancel{\sin(a)\sin(b)\sin(\iperiod)\tan(\hp)}\\\\
-(\cos(\iperiod)\tan(\hp))(\sin(a)\cos(b)-\cos(a)\sin(b))+\sin(\iperiod)(\sin(a)\cos(b)-\cos(a)\sin(b))\\
-(\cos(\iperiod)\tan(\hp)+\sin(\iperiod)(\sin(a)\cos(b)-\cos(a)\sin(b))\\
-(\cos(\iperiod)\tan(\hp)+\sin(\iperiod)\sin(a-b)
-\end{gather*}
-\pagebreak\\
-meaning that we can now simplify the original fraction (denoted \textbf{3.1}) to become:
-\begin{gather*}
-\frac{(\sin(\iperiod)\tan(\hp)-\cos(\iperiod))\sin(a-b)}{(\cos(\iperiod)\tan(\hp)+\sin(\iperiod))\sin(a-b)}\\
-\frac{\sin(\iperiod)\tan(\hp)-\cos(\iperiod)}{\cos(\iperiod)\tan(\hp)+\sin(\iperiod)} * \frac{\cos(\hp)}{\cos(\hp)}\\
-\frac{\sin(\iperiod)\sin(\hp)-\cos(\iperiod)\cos(\hp)}{\cos(\iperiod)\sin(\hp)+\sin(\iperiod)\cos(\hp)}\\
-\frac{-(\cos(\iperiod)\cos(\hp)-\sin(\iperiod)\sin(\hp))}{\sin(\hp)\cos(\iperiod)+\cos(\hp)\sin(\iperiod)}\\
-\frac{-\cos(\iperiod+\hp)}{\sin(\iperiod+\hp)}\\
--\cot(\iperiod+\hp)\\
--\cot((2\custi+1)\hp)
-\end{gather*}
-so the equation of the "modified" line becomes:
-\begin{gather*}
-y_m=-\cot((2\custi+1)\hp)x+\sin_n(\alpha)+\cot((2\custi+1)\hp)\cos_n(\alpha)
-\end{gather*}
-This leads to the conclusion that when \(\iperiod\leq a<b\leq(\custi+1)\frac{2\pi}{n}\) the slopes of \(y_m\) and \(\mathrm{L_i}\) are equal. \\
-If \(a=0\), due to \textbf{Identity 1.3}, then for any applicable value of \(b,\ y_m\) becomes:
-\begin{gather*}
-y_m=-\cot((2\custi+1)\hp)x+\sin(\iperiod)+\cot((2\custi+1)\hp)\cos(\iperiod)
-\end{gather*}
-Meaning that \(y_m=\mathrm{L_i}\) when \(a=0\) (denoted  \(y_{m,a=0}\)) and due to \textbf{Identity 1.3}: \(\sin_n(a+\iperiod)=\sin(\iperiod) \mathrm{\ and\ } \cos_n(a+\iperiod)=\cos(\iperiod)\) thus the point \(\rm p_a\), located at \((\cos_n(a+\iperiod), \sin_n(a+\iperiod))\), is equal to \(\rm v_i\).\\
-Because \(y_{m,a=0} = L_i\), point \(\rm p_b\) (located at \((\cos_n(b+\iperiod),\sin_n(b+\iperiod))\)) is always on line segment \(\rm L_i\), thus when \(a\neq0\), \(\rm p_a\) must also always be on line segment \(\rm L_i\).\\
-This means that for any value \(x\) where \(0\leq x \leq\period\), the point \(\rm p_x\), located at \((\cos_n(x+\iperiod),\sin_n(x+\iperiod))\), falls on line \(\rm L_i\) of shape \(\rm s_n\), and since \(\custi\in\mathbb{Z}\), any point \(\rm p_\theta\), located at \((\cos_n(\theta),\sin_n(\theta))\), will always be on the perimeter of shape \(\rm s_n\).
-
-
+This is true because \(\arccos(\cos(s\theta))\) evaluates to 0 whenever \(\theta=\iperiod\), which means \(\sec(\frac{\pi-\arccos(\cos(s\theta))}{s})\) simplifies to \(\sec(\hp)\) so \(\custd(\iperiod)=\sec(\hp)\cos(\hp)=1\)
 
 \section{Shape Equations}
 From these formulas, the equation for any regular polygon can be derived. The equation is found through a mutation of the ellipse equation by \(\custd(\theta)\):
@@ -192,4 +133,73 @@ meaning that the standard equation is:
 \frac{(x-h)^2}{a^2}+\frac{(y-k)^2}{b^2}=\custdsq(\arctan(\frac{(y-k)a}{(x-h)b})-\frac{\pi}{2}(\frac{x-h}{\abs{x-h}}-1))^2
 \end{gather*}
 As \(\custd\) takes an angle, a constant value can be added to \(\theta\) to make any shape rotate, allowing for easy rotation calculations.
+
+\section{Proof}
+Let \(\custi,s=\mathbb{Z},s\geq3\). Shape \(\rm P_s\) is made of s vertices and s line segments with the \(\rm n^{th}\) vertex (\(\rm n_i\)) at the point \((\cos(\iperiod), \sin(\iperiod))\). The \(\rm n^{th}\) line segment, \(\rm L_n\), spans between \(\rm v_n\) and \(\rm v_{n+1}\) and is represented by the equation
+\begin{gather*}
+\mathrm{L_n}=\frac{\sin((\custi+1)\period)-\sin(\iperiod)}{\cos((\custi+1)\period)-\cos(\iperiod)}x+\sin(\iperiod)-\frac{\sin((\custi+1)\period)-\sin(\iperiod)}{\cos((\custi+1)\period)-\cos(\iperiod)}\cos(\iperiod)
+\end{gather*}
+which simplifies to
+\begin{gather*}
+\mathrm{L_n}=-\cot((2\custi+1)\hp)x+\sin(\iperiod)+\cot((2\custi+1)\hp)\cos(\iperiod)
+\end{gather*}
+Let \(0\leq a<b\leq\period\), \(\alpha=a+\iperiod\), and \(\beta=b+\iperiod\): a "modified" line can be drawn with the equation \(\sin_s(\theta)\) and \(\cos_s(\theta)\) which would be written as
+\begin{gather*}
+y_m=\frac{\sin_s(\beta)-\sin_s(\alpha)}{\cos_s(\beta)-\cos_s(\alpha)}x+\sin_s(\alpha)-\frac{\sin_s(\beta)-\sin_s(\alpha)}{\cos_s(\beta)-\cos_s(\alpha)}\cos_s(\alpha)\\
+\end{gather*}
+the slope of \(y_m\) can be expanded to
+\begin{gather*}
+%\frac{\custd(\beta)\sin(\beta)-\custd(\alpha)\sin(\alpha)}{\custd(\beta)\cos(\beta)-\custd(\alpha)\cos(\alpha)}\\
+%\frac{\cos(\hp)(\sec(\hp-b)\sin(\beta)-\sec(\hp-a)\sin(\alpha))}{\cos(\hp)(\sec(\hp-b)\cos(\beta)-\sec(\hp-a)\cos(\alpha))}%*\frac{\cos(\hp-a)\cos(\hp-b)}{\cos(\hp-a)\cos(\hp-b)}\\
+%\frac{\sin(\beta)\cos(\hp-a)-\sin(\alpha)\cos(\hp-b)}{\cos(\beta)\cos(\hp-a)-\cos(\alpha)\cos(\hp-b)}\\
+%\frac{\sin(\beta)(\cos(\hp)\cos(a)+\sin(\hp)\sin(a))-\sin(\alpha)(\cos(\hp)\cos(b)+\sin(\hp)\sin(b))}{\cos(\beta)(\cos(\hp)\cos(a)+\sin(\hp)\sin(a))-\cos(\alpha)(\cos(\hp)\cos(b)+\sin(\hp)\sin(b))}*\frac{\sec(\hp)}{\sec(\hp)}\\
+\frac{\sin(\beta)(\cos(a)+\tan(\hp)\sin(a))-\sin(\alpha)(\cos(b)+\tan(\hp)\sin(b))}{\cos(\beta)(\cos(a)+\tan(\hp)\sin(a))-\cos(\alpha)(\cos(b)+\tan(\hp)\sin(b))}
+\end{gather*}
+Which simplifies to
+\begin{gather*}
+\frac{\sin(a-b)(\sin(\iperiod)\tan(\hp)-\cos(\iperiod))}{\sin(a-b)(\cos(\iperiod)\tan(\hp)+\sin(\iperiod))}=-\cot((2\custi+1)\hp)
+\end{gather*}
+\iffalse
+Splitting the equation up the numerator simplifies like so:
+\begin{gather*}
+\sin(\beta)(\cos(a)+\tan(\hp)\sin(a))-\sin(\alpha)(\cos(b)+\tan(\hp)\sin(b))\\\\
+(\sin(b)\cos(\iperiod)+\cos(b)\sin(\iperiod))(\cos(a)+\tan(\hp)\sin(a))-\dotso\\\dotso(\sin(a)\cos(\iperiod)+\cos(a)\sin(\iperiod))(\cos(b)+\tan(\hp)\sin(b))\\\\
+\cos(a)\sin(b)\cos(\iperiod)+\cancel{\sin(a)\sin(b)\cos(\iperiod)\tan(\hp)}+\cancel{\cos(a)\cos(b)\sin(\iperiod)}+\dotso\\\dotso\sin(a)\cos(b)\sin(\iperiod)\tan(\hp)-\sin(a)\cos(b)\cos(\iperiod)-\cancel{\sin(a)\sin(b)\cos(\iperiod)\tan(\hp)}-\dotso\\\dotso\cancel{\cos(a)\cos(b)\sin(\iperiod)}-\cos(a)\sin(b)\sin(\iperiod)\tan(\hp)\\\\
+\cos(\iperiod)(\cos(a)\sin(b)-\sin(a)\cos(b))+\sin(\iperiod)\tan(\hp)(\sin(a)\cos(b)-\cos(a)\sin(b))\\\\
+\sin(\iperiod)\tan(\hp)(\sin(a)\cos(b)-\cos(a)\sin(b))-\cos(\iperiod)(\sin(a)\cos(b)-\cos(a)\sin(b))\\\\
+(\sin(\iperiod)\tan(\hp)-\cos(\iperiod))(\sin(a)\cos(b)-\cos(a)\sin(b))\\\\
+(\sin(\iperiod)\tan(\hp)-\cos(\iperiod))\sin(a-b)
+\end{gather*}
+and the denominator simplifies to
+\begin{gather*}
+\cos(\beta)(\cos(a)+\tan(\hp)\sin(a))-\cos(\alpha)(\cos(b)+\tan(\hp)\sin(b))\\\\
+(\cos(b)\cos(\iperiod)-\sin(b)\sin(\iperiod))(\cos(a)+\tan(\hp)\sin(a))-\dotso\\\dotso(\cos(a)\cos(\iperiod)-\sin(a)\sin(\iperiod))(\cos(b)+\tan(\hp)\sin(b))\\\\
+\cancel{\cos(a)\cos(b)\cos(\iperiod)}+\sin(a)\cos(b)\cos(\iperiod)\tan(\hp)-\cos(a)\sin(b)\sin(\iperiod)-\dotso\\\dotso\cancel{\sin(a)\sin(b)\sin(\iperiod)\tan(\hp)}-\cancel{\cos(a)\cos(b)\cos(\iperiod)}-\cos(a)\sin(b)\cos(\iperiod)\tan(\hp)+\dotso\\\dotso\sin(a)\cos(b)\sin(\iperiod)+\cancel{\sin(a)\sin(b)\sin(\iperiod)\tan(\hp)}\\\\
+(\cos(\iperiod)\tan(\hp))(\sin(a)\cos(b)-\cos(a)\sin(b))+\sin(\iperiod)(\sin(a)\cos(b)-\cos(a)\sin(b))\\
+(\cos(\iperiod)\tan(\hp)+\sin(\iperiod)(\sin(a)\cos(b)-\cos(a)\sin(b))\\
+(\cos(\iperiod)\tan(\hp)+\sin(\iperiod)\sin(a-b)
+\end{gather*}
+meaning that we can now simplify the original fraction (denoted \textbf{3.1}) to become:
+\begin{gather*}
+\frac{(\sin(\iperiod)\tan(\hp)-\cos(\iperiod))\sin(a-b)}{(\cos(\iperiod)\tan(\hp)+\sin(\iperiod))\sin(a-b)}\\
+\frac{\sin(\iperiod)\tan(\hp)-\cos(\iperiod)}{\cos(\iperiod)\tan(\hp)+\sin(\iperiod)} * \frac{\cos(\hp)}{\cos(\hp)}\\
+\frac{\sin(\iperiod)\sin(\hp)-\cos(\iperiod)\cos(\hp)}{\cos(\iperiod)\sin(\hp)+\sin(\iperiod)\cos(\hp)}\\
+\frac{-(\cos(\iperiod)\cos(\hp)-\sin(\iperiod)\sin(\hp))}{\sin(\hp)\cos(\iperiod)+\cos(\hp)\sin(\iperiod)}\\
+\frac{-\cos(\iperiod+\hp)}{\sin(\iperiod+\hp)}\\
+-\cot(\iperiod+\hp)\\
+-\cot((2\custi+1)\hp)
+\end{gather*}
+\fi\\
+thus the equation of the "modified" line becomes:
+\begin{gather*}
+y_m=-\cot((2\custi+1)\hp)x+\sin_s(\alpha)+\cot((2\custi+1)\hp)\cos_s(\alpha)
+\end{gather*}
+This leads to the conclusion that when \(\iperiod\leq a<b\leq(\custi+1)\frac{2\pi}{n}\) the slopes of \(y_m\) and \(\mathrm{L_n}\) are equal. \\
+If \(a=0\), due to \textbf{Identity 1.3}, then for any applicable value of \(b,\ y_m\) becomes:
+\begin{gather*}
+y_m=-\cot((2\custi+1)\hp)x+\sin(\iperiod)+\cot((2\custi+1)\hp)\cos(\iperiod)
+\end{gather*}
+Meaning that \(y_m=\mathrm{L_n}\) when \(a=0\) (denoted  \(y_{m,a=0}\)) and due to \textbf{Identity 1.3}: \(\sin_s(a+\iperiod)=\sin(\iperiod) \mathrm{\ and\ } \cos_s(a+\iperiod)=\cos(\iperiod)\) thus the point \(A(\cos_s(a+\iperiod), \sin_s(a+\iperiod))\), is equal to \(\rm v_n\).\\
+Because \(y_{m,a=0} = L_n\), the point \(B(\cos_s(b+\iperiod),\sin_s(b+\iperiod))\)) is always on line segment \(\rm L_n\), thus when \(a\neq0\), \(A\) must also always be on line segment \(\rm L_n\).\\
+This means that for any value \(x\) where \(0\leq x \leq\period\), the point \(X(\cos_s(x+\iperiod),\sin_s(x+\iperiod))\), falls on line \(\rm L_n\) of \(\rm P_s\), and since \(\custi\in\mathbb{Z}\), any point \(P(\cos_s(\theta),\sin_s(\theta))\), will always be on the perimeter of \(\rm P_s\).
 \end{document}
