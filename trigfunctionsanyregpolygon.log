@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.22)  21 OCT 2023 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.22)  22 OCT 2023 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**trigfunctionsanyregpolygon.tex
-(./trigfunctionsanyregpolygon.tex
-LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-05-15>
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+**./trigfunctionsanyregpolygon.tex
+(trigfunctionsanyregpolygon.tex
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-29>
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -23,25 +23,25 @@ File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
 )
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
 )
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks18
+\KV@toks@=\toks19
 )
-(d:/Working Folders/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(d:/Working Folders/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count193
@@ -55,12 +55,13 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutheight=\dimen146
 \Gm@layouthoffset=\dimen147
 \Gm@layoutvoffset=\dimen148
-\Gm@dimlist=\toks19
-)
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+\Gm@dimlist=\toks20
 
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count196
 \calc@Bcount=\count197
@@ -73,27 +74,27 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count198
 \calc@Cskip=\skip52
 )
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/mathtools/mhsetup.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2022/04/08 v2.17n AMS math features
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks20
+\@emptytoks=\toks21
 \ex@=\dimen151
 ))
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen152
 )
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count199
@@ -126,21 +127,21 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \dotsspace@=\muskip16
 \c@parentequation=\count272
 \dspbrk@lvl=\count273
-\tag@help=\toks21
+\tag@help=\toks22
 \row@=\count274
 \column@=\count275
 \maxfields@=\count276
-\andhelp@=\toks22
+\andhelp@=\toks23
 \eqnshift@=\dimen154
 \alignsep@=\dimen155
 \tagshift@=\dimen156
 \tagwidth@=\dimen157
 \totwidth@=\dimen158
 \lineht@=\dimen159
-\@envbody=\toks23
+\@envbody=\toks24
 \multlinegap=\skip54
 \multlinetaggap=\skip55
-\mathdisplay@stack=\toks24
+\mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
@@ -156,7 +157,7 @@ LaTeX Info: Redefining \] on input line 2954.
 \xmathstrut@box=\box53
 \xmathstrut@dim=\dimen167
 )
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -164,38 +165,337 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/cancel/cancel.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/cancel\cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 )
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/comment/comment.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
 \CommentStream=\write3
 
 Excluding comment 'comment')
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdfte
-x.def
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count278
+)
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count279
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count280
+\c@listtotal=\count281
+\c@listcount=\count282
+\c@liststart=\count283
+\c@liststop=\count284
+\c@citecount=\count285
+\c@citetotal=\count286
+\c@multicitecount=\count287
+\c@multicitetotal=\count288
+\c@instcount=\count289
+\c@maxnames=\count290
+\c@minnames=\count291
+\c@maxitems=\count292
+\c@minitems=\count293
+\c@citecounter=\count294
+\c@maxcitecounter=\count295
+\c@savedcitecounter=\count296
+\c@uniquelist=\count297
+\c@uniquename=\count298
+\c@refsection=\count299
+\c@refsegment=\count300
+\c@maxextratitle=\count301
+\c@maxextratitleyear=\count302
+\c@maxextraname=\count303
+\c@maxextradate=\count304
+\c@maxextraalpha=\count305
+\c@abbrvpenalty=\count306
+\c@highnamepenalty=\count307
+\c@lownamepenalty=\count308
+\c@maxparens=\count309
+\c@parenlevel=\count310
+\blx@tempcnta=\count311
+\blx@tempcntb=\count312
+\blx@tempcntc=\count313
+\c@blx@maxsection=\count314
+\blx@maxsegment@0=\count315
+\blx@notetype=\count316
+\blx@parenlevel@text=\count317
+\blx@parenlevel@foot=\count318
+\blx@sectionciteorder@0=\count319
+\blx@sectionciteorderinternal@0=\count320
+\blx@entrysetcounter=\count321
+\blx@biblioinstance=\count322
+\labelnumberwidth=\skip57
+\labelalphawidth=\skip58
+\biblabelsep=\skip59
+\bibitemsep=\skip60
+\bibnamesep=\skip61
+\bibinitsep=\skip62
+\bibparsep=\skip63
+\bibhang=\skip64
+\blx@bcfin=\read2
+\blx@bcfout=\write4
+\blx@langwohyphens=\language79
+\c@mincomprange=\count323
+\c@maxcomprange=\count324
+\c@mincompwidth=\count325
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'ieee.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count326
+\c@savedafterword=\count327
+\c@annotator=\count328
+\c@savedannotator=\count329
+\c@author=\count330
+\c@savedauthor=\count331
+\c@bookauthor=\count332
+\c@savedbookauthor=\count333
+\c@commentator=\count334
+\c@savedcommentator=\count335
+\c@editor=\count336
+\c@savededitor=\count337
+\c@editora=\count338
+\c@savededitora=\count339
+\c@editorb=\count340
+\c@savededitorb=\count341
+\c@editorc=\count342
+\c@savededitorc=\count343
+\c@foreword=\count344
+\c@savedforeword=\count345
+\c@holder=\count346
+\c@savedholder=\count347
+\c@introduction=\count348
+\c@savedintroduction=\count349
+\c@namea=\count350
+\c@savednamea=\count351
+\c@nameb=\count352
+\c@savednameb=\count353
+\c@namec=\count354
+\c@savednamec=\count355
+\c@translator=\count356
+\c@savedtranslator=\count357
+\c@shortauthor=\count358
+\c@savedshortauthor=\count359
+\c@shorteditor=\count360
+\c@savedshorteditor=\count361
+\c@labelname=\count362
+\c@savedlabelname=\count363
+\c@institution=\count364
+\c@savedinstitution=\count365
+\c@lista=\count366
+\c@savedlista=\count367
+\c@listb=\count368
+\c@savedlistb=\count369
+\c@listc=\count370
+\c@savedlistc=\count371
+\c@listd=\count372
+\c@savedlistd=\count373
+\c@liste=\count374
+\c@savedliste=\count375
+\c@listf=\count376
+\c@savedlistf=\count377
+\c@location=\count378
+\c@savedlocation=\count379
+\c@organization=\count380
+\c@savedorganization=\count381
+\c@origlocation=\count382
+\c@savedoriglocation=\count383
+\c@origpublisher=\count384
+\c@savedorigpublisher=\count385
+\c@publisher=\count386
+\c@savedpublisher=\count387
+\c@language=\count388
+\c@savedlanguage=\count389
+\c@origlanguage=\count390
+\c@savedoriglanguage=\count391
+\c@pageref=\count392
+\c@savedpageref=\count393
+\shorthandwidth=\skip65
+\shortjournalwidth=\skip66
+\shortserieswidth=\skip67
+\shorttitlewidth=\skip68
+\shortauthorwidth=\skip69
+\shorteditorwidth=\skip70
+\locallabelnumberwidth=\skip71
+\locallabelalphawidth=\skip72
+\localshorthandwidth=\skip73
+\localshortjournalwidth=\skip74
+\localshortserieswidth=\skip75
+\localshorttitlewidth=\skip76
+\localshortauthorwidth=\skip77
+\localshorteditorwidth=\skip78
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+\c@textcitecount=\count394
+\c@textcitetotal=\count395
+\c@textcitemaxnames=\count396
+\c@biburlbigbreakpenalty=\count397
+\c@biburlbreakpenalty=\count398
+\c@biburlnumpenalty=\count399
+\c@biburlucpenalty=\count400
+\c@biburllcpenalty=\count401
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count402
+)
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-ieee\ieee.bbx
+File: ieee.bbx 2021/12/06 v1.3f biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric-co
+mp.bbx
+File: numeric-comp.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bb
+x
+File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
+bx
+File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count403
+\c@bbx:relatedtotal=\count404
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-ieee\ieee.cbx
+File: ieee.cbx 2021/12/06 v1.3f biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric-co
+mp.cbx
+File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count405
+\c@cbx@tempcntb=\count406
+\c@cbx@tempcntc=\count407
+\c@cbx@tempcntd=\count408
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\cites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2023-08-29 L3 programming layer (loader) 
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count278
+\l__color_backend_stack_int=\count409
 \l__pdf_internal_box=\box54
-) (./trigfunctionsanyregpolygon.aux)
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2023-08-29 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3
+.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2023-08-29 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+))
+\@quotelevel=\count410
+\@quotereset=\count411
+ (trigfunctionsanyregpolygon.aux)
 \openout1 = `trigfunctionsanyregpolygon.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -231,100 +531,158 @@ LaTeX Font Info:    ... okay on input line 31.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (d:/Working Folders/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 
-(d:/Working Folders/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count279
+\scratchcounter=\count412
 \scratchdimen=\dimen168
 \scratchbox=\box55
-\nofMPsegments=\count280
-\nofMParguments=\count281
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count282
+\nofMPsegments=\count413
+\nofMParguments=\count414
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count415
 \MPscratchDim=\dimen169
-\MPnumerator=\count283
-\makeMPintoPDFobject=\count284
-\everyMPtoPDFconversion=\toks26
+\MPnumerator=\count416
+\makeMPintoPDFobject=\count417
+\everyMPtoPDFconversion=\toks27
 )))
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-bas
-e.sty
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.
-cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \Gin@req@height=\dimen170
 \Gin@req@width=\dimen171
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
 
- (d:/Working Folders/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lb
+x
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `trigfunctionsanyregpolygon.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'trigfunctionsanyregpolygon.bbl' found.
+ (trigfunctionsanyregpolygon.bbl)
+Package biblatex Info: Reference section=0 on input line 33.
+Package biblatex Info: Reference segment=0 on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
 
 
-(d:/Working Folders/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1
 
 
-{d:/Working Folders/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{
-d:/Working Folders/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1
-.enc}] (./trigfunctionsanyregpolygon.toc)
-\tf@toc=\write4
-\openout4 = `trigfunctionsanyregpolygon.toc'.
+{C:/Users/erumi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+(trigfunctionsanyregpolygon.toc)
+\tf@toc=\write5
+\openout5 = `trigfunctionsanyregpolygon.toc'.
 
- [1] Excluding 'comment' comment.
-[2] [3] [4] [5] [6] (./trigfunctionsanyregpolygon.aux) ) 
+ [1] Excluding 'comment' comment. [2]
+
+LaTeX Warning: Citation 'J. L. Spence' on page 3 undefined on input line 99.
+
+
+LaTeX Warning: Citation '"Perodic absolute value functions"' on page 3 undefine
+d on input line 99.
+
+[3] [4] [5] [6]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+26.
+
+(C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+[7] (trigfunctionsanyregpolygon.aux)
+ ***********
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-29>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                trigfunctionsanyregpolygon
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'trigfunctionsanyregpolygon.run.xml'.
+\openout1 = `trigfunctionsanyregpolygon.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4184 strings out of 476096
- 65400 string characters out of 5795114
- 1870845 words of memory out of 5000000
- 24520 multiletter control sequences out of 15000+600000
- 525413 words of font info for 65 fonts, out of 8000000 for 9000
+ 12255 strings out of 475247
+ 224989 string characters out of 5757791
+ 1940785 words of memory out of 5000000
+ 33629 multiletter control sequences out of 15000+600000
+ 576605 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,11n,76p,878b,237s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/Working Folders/tex
-live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Working Fold
-ers/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/Workin
-g Folders/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/
-Working Folders/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
-><d:/Working Folders/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb><d:/Working Folders/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><d:/Working Folders/texlive/2023/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb><d:/Working Folders/texlive/2023/texmf-dist/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb><d:/Working Folders/texlive/2023/texmf-dist/font
-s/type1/public/cm-super/sfbx1095.pfb><d:/Working Folders/texlive/2023/texmf-dis
-t/fonts/type1/public/cm-super/sfbx1200.pfb><d:/Working Folders/texlive/2023/tex
-mf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><d:/Working Folders/texlive/20
-23/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><d:/Working Folders/texl
-ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/Working Folder
-s/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on trigfunctionsanyregpolygon.pdf (7 pages, 195888 bytes).
+ 70i,11n,81p,1049b,1271s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\erumi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
+1095.pk> <C:\Users\erumi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\eccc1095.pk> <C:\Users\erumi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecti1095.pk> <C:\Users\erumi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecrm0900.pk> <C:\Users\erumi\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\erumi\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\erumi\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\erumi\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\erumi\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\erumi\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\erumi\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\
+erumi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\
+Users\erumi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk
+><C:/Users/erumi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mex10.pfb><C:/Users/erumi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmmi10.pfb><C:/Users/erumi/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb><C:/Users/erumi/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><C:/Users/erumi/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/erumi/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/erumi/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/erumi/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/eru
+mi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+>
+Output written on trigfunctionsanyregpolygon.pdf (8 pages, 197345 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 367 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

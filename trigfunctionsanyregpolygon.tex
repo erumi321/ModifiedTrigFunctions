@@ -11,6 +11,8 @@
 
 \usepackage{comment} %For editing
 
+\usepackage[backend=biber, style=ieee]{biblatex}
+
 \allowdisplaybreaks
 \DeclareMathOperator{\custd}{\mathrm{d}_s}
 \DeclareMathOperator{\custdsq}{\mathrm{d}_s}
@@ -21,12 +23,12 @@
 \DeclareMathOperator{\iperiod}{\custi\frac{2\pi}{s}}
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}%
 
-
-
 \renewcommand*\contentsname{Table of Contents}
 \title{Trigonometric Coefficients for Regular S-Sided Polygons}
 \author{Eli Ruminer}
 \date{}
+
+\addbibresource{myreferences.bib}
 
 \begin{document}
 
@@ -38,11 +40,13 @@
 \tableofcontents
 \newpage
 
-%REDO THIS PLEASE AHHHHH IT NEEDS MORE WORK
 \section{Introduction}
-This paper derives a function that generates a coefficient that transforms sine and cosine into calculating points for any s-sided regular polygon. This is done through using inverse trigonometric functions to create a periodic function that increases and decreases linearly over each period, allowing the creation of a coefficent which when multiplied by sine and cosine serves to transform them into an equivalent function for non-circle polygons.\\
- After deriving the equation we then prove that it represents a point on the perimeter of a unit n-gon by simplifying the slope-intercept form of a constructing line of the unit n-gon and two points between the modified sine and cosine showing they are the same. \\
-Through this, we can derive a general formula for any shape using the sign function and the newly proven coefficient function. This general function requires the use of an "input" angle, which is calculated using x and y for each point, and due to this can be rotated by simply adding or subtracting a constant from the angle calculation inside the coefficient function's input.
+This paper creates and proves a function that finds the distance between the center of a regular n-sided polygon and a point on its perimeter at a given angle without knowing that point's position. This when multiplied by sine or cosine allows finding those points on the perimeter of the polygon. This allows for the creation of a general equation for any regular n-sided polygon similar to the equation of a circle. This equation can then be used to find areas of intersection between polygons.\\
+Following this, the modified sine and cosine functions are then proved to always generate a point on the perimeter of an s-sided polygon, given s and an angle.
+
+%This paper derives a function that generates a coefficient that transforms sine and cosine into calculating points for any s-sided regular polygon. This is done through using inverse trigonometric functions to create a periodic function that increases and decreases linearly over each period, allowing the creation of a coefficent which when multiplied by sine and cosine serves to transform them into an equivalent function for non-circle polygons.\\
+%After deriving the equation we then prove that it represents a point on the perimeter of a unit n-gon by simplifying the slope-intercept form of a constructing line of the unit n-gon and two points between the modified sine and cosine showing they are the same. \\
+%Through this, we can derive a general formula for any shape using the sign function and the newly proven coefficient function. This general function requires the use of an "input" angle, which is calculated using x and y for each point, and due to this can be rotated by simply adding or subtracting a constant from the angle calculation inside the coefficient function's input.
 
 \begin{comment}
 \section{Theroems}
@@ -66,7 +70,6 @@ Through this, we can derive a general formula for any shape using the sign funct
 \end{equation*}
 \end{comment}
 
-\pagebreak
 \section{Trigonometric\ Equations}
 Let \(s=\{x:x\in\mathbb{Z}^+\ \mathrm{and}\ x\geq3\}\), and
 \begin{gather*}
@@ -93,7 +96,7 @@ These functions then simplify to:
 \sin_s(\theta)=\custd(\theta)\sin(\theta)
 \end{gather*}
 Which is not algebraic due to modulo, yet it can be noted that due to the nature of the original \(\custh(\theta)\), \(\theta\mod\period\) can be substituted for an equivalent function which has an equal period of \(\period\), increases linearly from 0 to \(\hp\) over \([0,\hp]\) and decreases linearly at the same rate over \([\hp,\period]\).\\
-These requirements can be met by \(\frac{\arccos(\cos(n\theta))}{n}\), which is periodic over \(\period\), has a domain of \(n\theta\in\mathbb{R},\text{and thus } \theta\in\mathbb{R}\), and a range of \([0,\frac{\pi}{s}]\), thus the above equations can be changed to:
+These requirements can be met by \(\frac{\arccos(\cos(n\theta))}{n}\) \footcite{J. L. Spence, "Perodic absolute value functions"}, which is periodic over \(\period\), has a domain of \(n\theta\in\mathbb{R},\text{and thus } \theta\in\mathbb{R}\), and a range of \([0,\frac{\pi}{s}]\), thus the above equations can be changed to:
 \begin{gather*}
 \custd(\theta)=\cos(\hp)\sec(\frac{\pi-\arccos(\cos(s\theta))}{s})\\
 \cos_s(\theta)=\custd(\theta)\cos(\theta)\\
@@ -115,7 +118,7 @@ When \(\theta\) only spans one period, \(\frac{\arccos(\cos(s\theta))}{s}\) is n
 \end{gather*}
 This is true because \(\arccos(\cos(s\theta))\) evaluates to 0 whenever \(\theta=\iperiod\), which means \(\sec(\frac{\pi-\arccos(\cos(s\theta))}{s})\) simplifies to \(\sec(\hp)\) so \(\custd(\iperiod)=\sec(\hp)\cos(\hp)=1\)
 
-\section{Shape Equations}
+\section{Polygonal Equations}
 From these formulas, the equation for any regular polygon can be derived. The equation is found through a mutation of the ellipse equation by \(\custd(\theta)\):
 \begin{gather*}
 \frac{(x-h)^2}{a^2}+\frac{(y-k)^2}{b^2}=\custd(\theta)^2*1
@@ -133,6 +136,21 @@ meaning that the standard equation is:
 \frac{(x-h)^2}{a^2}+\frac{(y-k)^2}{b^2}=\custdsq(\arctan(\frac{(y-k)a}{(x-h)b})-\frac{\pi}{2}(\frac{x-h}{\abs{x-h}}-1))^2
 \end{gather*}
 As \(\custd\) takes an angle, a constant value can be added to \(\theta\) to make any shape rotate, allowing for easy rotation calculations.
+
+\subsection{Intersections}
+Let the regular Polygon \(P_s\) with s sides (where (\(s\in\mathbb{Z}\) and \(s\geq3\)) be represented by the equation
+\begin{gather*}
+P_s(x,y)=\frac{(x-h)^2}{a^2}+\frac{(y-k)^2}{b^2}-\custdsq(\arctan(\frac{(y-k)a}{(x-h)b})-\frac{\pi}{2}(\frac{x-h}{\abs{x-h}}-1))^2
+\end{gather*}
+A point \((x,y)\) is on the perimeter of \(P_s\) if \(P_s(x,y)=0\), inside the area of \(P_s\) if \(P_s(x,y)<0\), and outside the area of \(P_s\) if \(P_s(x,y)>0\).\\
+Thus \((x,y)\) is inside the intersection of two polygons \(P_{s_1}\) and \(P_{s_2}\) if \(P_{s_1}(x,y)<0\) and \(P_{s_2}(x,y)<0\). This can be made into one inequality of:
+\begin{gather*}
+\left|(P_{s_1}(x,y)-|P_{s_1}(x,y)|)(P_{s_2}(x,y)-|P_{s_2}(x,y)|)\right|>0
+\end{gather*}
+More generally for any set of Polygons \(C\), a point \((x,y)\) is inside the intersection of all polygons in the set (the "addition" of the polygons) if
+\begin{gather*}
+\left|\prod_{i=1}^{|C|}(C_i(x,y)-|C_i(x,y)|)\right|>0
+\end{gather*}
 
 \section{Proof}
 Let \(\custi,s=\mathbb{Z},s\geq3\). Shape \(\rm P_s\) is made of s vertices and s line segments with the \(\rm n^{th}\) vertex (\(\rm n_i\)) at the point \((\cos(\iperiod), \sin(\iperiod))\). The \(\rm n^{th}\) line segment, \(\rm L_n\), spans between \(\rm v_n\) and \(\rm v_{n+1}\) and is represented by the equation
@@ -199,7 +217,12 @@ If \(a=0\), due to \textbf{Identity 1.3}, then for any applicable value of \(b,\
 \begin{gather*}
 y_m=-\cot((2\custi+1)\hp)x+\sin(\iperiod)+\cot((2\custi+1)\hp)\cos(\iperiod)
 \end{gather*}
-Meaning that \(y_m=\mathrm{L_n}\) when \(a=0\) (denoted  \(y_{m,a=0}\)) and due to \textbf{Identity 1.3}: \(\sin_s(a+\iperiod)=\sin(\iperiod) \mathrm{\ and\ } \cos_s(a+\iperiod)=\cos(\iperiod)\) thus the point \(A(\cos_s(a+\iperiod), \sin_s(a+\iperiod))\), is equal to \(\rm v_n\).\\
+Meaning that \(y_m=\mathrm{L_n}\) when \(a=0\) (denoted \(y_{m,a=0}\)) and due to \textbf{Identity 1.3}: \(\sin_s(a+\iperiod)=\sin(\iperiod) \mathrm{\ and\ } \cos_s(a+\iperiod)=\cos(\iperiod)\) thus the point \(A(\cos_s(a+\iperiod), \sin_s(a+\iperiod))\), is equal to \(\rm v_n\).\\
 Because \(y_{m,a=0} = L_n\), the point \(B(\cos_s(b+\iperiod),\sin_s(b+\iperiod))\)) is always on line segment \(\rm L_n\), thus when \(a\neq0\), \(A\) must also always be on line segment \(\rm L_n\).\\
 This means that for any value \(x\) where \(0\leq x \leq\period\), the point \(X(\cos_s(x+\iperiod),\sin_s(x+\iperiod))\), falls on line \(\rm L_n\) of \(\rm P_s\), and since \(\custi\in\mathbb{Z}\), any point \(P(\cos_s(\theta),\sin_s(\theta))\), will always be on the perimeter of \(\rm P_s\).
+
+\pagebreak
+
+\printbibliography
+
 \end{document}
