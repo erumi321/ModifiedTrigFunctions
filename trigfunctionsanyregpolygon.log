@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.22)  22 OCT 2023 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.22)  23 OCT 2023 22:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -622,14 +622,19 @@ LaTeX Warning: Citation 'J. L. Spence' on page 3 undefined on input line 99.
 LaTeX Warning: Citation '"Perodic absolute value functions"' on page 3 undefine
 d on input line 99.
 
-[3] [4] [5] [6]
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 176--178
+
+ []
+
+[5] Excluding 'comment' comment. [6] [7]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-26.
+67.
 
 (C:\Users\erumi\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-[7] (trigfunctionsanyregpolygon.aux)
+[8] (trigfunctionsanyregpolygon.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -648,13 +653,13 @@ Package logreq Info: Writing requests to 'trigfunctionsanyregpolygon.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12255 strings out of 475247
- 224989 string characters out of 5757791
- 1940785 words of memory out of 5000000
- 33629 multiletter control sequences out of 15000+600000
+ 12261 strings out of 475247
+ 225159 string characters out of 5757791
+ 1937785 words of memory out of 5000000
+ 33635 multiletter control sequences out of 15000+600000
  576605 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,11n,81p,1049b,1271s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,23n,81p,1049b,1271s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\erumi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1095.pk> <C:\Users\erumi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\eccc1095.pk> <C:\Users\erumi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -662,10 +667,10 @@ Here is how much of TeX's memory you used:
 pen/ec/dpi600\ecrm0900.pk> <C:\Users\erumi\AppData\Local\MiKTeX\fonts/pk/ljfour
 /jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\erumi\AppData\Local\MiKTeX\fonts/pk/
 ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\erumi\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\erumi\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\erumi\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\erumi\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\erumi\
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\erumi\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\erumi\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\erumi\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\erumi\
 AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\
 erumi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\
 Users\erumi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk
@@ -680,9 +685,9 @@ Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/erumi/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/eru
 mi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 >
-Output written on trigfunctionsanyregpolygon.pdf (8 pages, 197344 bytes).
+Output written on trigfunctionsanyregpolygon.pdf (9 pages, 202798 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
+ 374 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
